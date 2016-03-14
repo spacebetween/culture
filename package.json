@@ -1,0 +1,19 @@
+{
+  "name": "culture",
+  "version": "1.0.0",
+  "description": "A place to hold stuff about us",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spacebetween/culture.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/spacebetween/culture/issues"
+  },
+  "homepage": "https://github.com/spacebetween/culture#readme"
+}
