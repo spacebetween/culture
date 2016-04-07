@@ -1,4 +1,4 @@
-# Default application configuration that all configurations inherit from.
+# Reference: https://github.com/brigade/scss-lint/blob/master/lib/scss_lint/linter/README.md#emptylinebetweenblocks
 
 scss_files: "scss/**/*.scss"
 
@@ -35,7 +35,7 @@ linters:
     style: new_line # or 'same_line'
 
   EmptyLineBetweenBlocks:
-    enabled: true
+    enabled: false
     ignore_single_line_blocks: true
 
   EmptyRule:
@@ -71,7 +71,7 @@ linters:
     enabled: true
     allow_non_nested_indentation: false
     character: space # or 'tab'
-    width: 2
+    width: 4
 
   LeadingZero:
     enabled: true
@@ -88,10 +88,10 @@ linters:
 
   NestingDepth:
     enabled: true
-    max_depth: 3
+    max_depth: 4
 
   PlaceholderInExtend:
-    enabled: true
+    enabled: false
 
   PropertyCount:
     enabled: false
@@ -115,7 +115,7 @@ linters:
 
   SelectorDepth:
     enabled: true
-    max_depth: 3
+    max_depth: 4
 
   SelectorFormat:
     enabled: true
