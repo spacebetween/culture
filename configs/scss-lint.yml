@@ -1,150 +1,86 @@
-# List of all possibilities https://github.com/causes/scss-lint/blob/master/lib/scss_lint/linter/README.md
+rules:
+  # Extends
+  extends-before-mixins: 1
+  extends-before-declarations: 1
+  placeholder-in-extend: 0
 
-linters:
-  BangFormat:
-    enabled: true
-    space_before_bang: false
+  # Mixins
+  mixins-before-declarations: 1
 
-  BorderZero:
-    enabled: true
+  # Line Spacing
+  one-declaration-per-line: 1
+  empty-line-between-blocks: 0
+  single-line-per-selector: 1
 
-  ColorKeyword:
-    enabled: true
+  # Disallows
+  no-color-keywords: 1
+  no-color-literals: 0
+  no-css-comments: 1
+  no-debug: 1
+  no-duplicate-properties: 1
+  no-empty-rulesets: 1
+  no-extends: 0
+  no-ids: 1
+  no-important: 1
+  no-invalid-hex: 1
+  no-mergeable-selectors: 1
+  no-misspelled-properties: 1
+  no-qualifying-elements: 1
+  no-trailing-whitespace: 1
+  no-trailing-zero: 1
+  no-transition-all: 1
+  no-url-protocols: 1
+  no-vendor-prefixes: 1
+  no-warn: 1
+  property-units: 0
 
-  Comment:
-    enabled: true
+  # Nesting
+  force-attribute-nesting: 1
+  force-element-nesting: 0
+  force-pseudo-nesting: 0
 
-  DebugStatement:
-    enabled: true
+  # Name Formats
+  class-name-format:
+    - 1
+    -
+      convention: hyphenatedbem
+  function-name-format: 1
+  id-name-format: 0
+  mixin-name-format: 1
+  placeholder-name-format: 1
+  variable-name-format: 1
 
-  DeclarationOrder:
-    enabled: true
+  # Style Guide
+  bem-depth: 0
+  border-zero: 1
+  brace-style: 1
+  clean-import-paths: 1
+  empty-args: 1
+  hex-length: 1
+  hex-notation: 1
+  indentation: 
+    - 1
+    -
+      size: 4
+  leading-zero: 1
+  nesting-depth: 1
+  property-sort-order: 0
+  quotes: 1
+  shorthand-values: 1
+  url-quotes: 1
+  variable-for-property: 1
+  zero-unit: 1
 
-  DuplicateProperty:
-    enabled: true
+  # Inner Spacing
+  space-after-comma: 1
+  space-before-colon: 1
+  space-after-colon: 1
+  space-before-brace: 1
+  space-before-bang: 1
+  space-after-bang: 1
+  space-between-parens: 1
+  space-around-operator: 1
 
-  ElsePlacement:
-    enabled: true
-
-  EmptyLineBetweenBlocks:
-    enabled: false
-
-  EmptyRule:
-    enabled: true
-
-  FinalNewline:
-    enabled: true
-    present: false
-
-  HexLength:
-    enabled: true
-    style: short
-
-  HexNotation:
-    enabled: true
-    style: uppercase
-
-  HexValidation:
-    enabled: true
-
-  IdWithSelector:
-    enabled: true
-
-  ImportPath:
-    enabled: true
-    filename_extension: true
-
-  Indentation:
-    enabled: true
-    character: tab
-    width: 1
-
-  LeadingZero:
-    enabled: true
-    style: exclude_zero # or 'include_zero'
-
-  MergeableSelector:
-    enabled: true
-    force_nesting: true
-
-  NameFormat:
-    enabled: false
-
-  NestingDepth:
-    enabled: true
-    max_depth: 4
-
-  PlaceholderInExtend:
-    enabled: false
-
-  PropertySortOrder:
-    enabled: false
-
-  PropertySpelling:
-    enabled: true
-    extra_properties: []
-
-  QualifyingElement:
-    enabled: false
-
-  SelectorDepth:
-    enabled: true
-    max_depth: 3
-
-  SelectorFormat:
-    enabled: true
-    convention: BEM
-
-  Shorthand:
-    enabled: true
-
-  SingleLinePerProperty:
-    enabled: true
-
-  SingleLinePerSelector:
-    enabled: true
-
-  SpaceAfterComma:
-    enabled: true
-
-  SpaceAfterPropertyColon:
-    enabled: true
-
-  SpaceAfterPropertyName:
-    enabled: true
-
-  SpaceBeforeBrace:
-    enabled: true
-    allow_single_line_padding: false
-
-  SpaceBetweenParens:
-    enabled: true
-    spaces: 0
-
-  StringQuotes:
-    enabled: true
-    style: single_quotes # or double_quotes
-
-  TrailingSemicolon:
-    enabled: true
-
-  UnnecessaryMantissa:
-    enabled: true
-
-  UnnecessaryParentReference:
-    enabled: true
-
-  UrlFormat:
-    enabled: false
-
-  UrlQuotes:
-    enabled: true
-
-  VendorPrefix:
-    enabled: false
-
-  ZeroUnit:
-    enabled: true
-
-  Compass::*:
-    enabled: false
+  # Final Items
+  trailing-semicolon: 1
+  final-newline: 1
