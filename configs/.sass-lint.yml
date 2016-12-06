@@ -1,3 +1,6 @@
+options:
+  max-warnings: 0
+
 rules:
   # Extends
   extends-before-mixins: 1
